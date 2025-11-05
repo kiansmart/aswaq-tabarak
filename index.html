@@ -1252,7 +1252,7 @@
                     <input type="text" id="address-notes">
                 </div>
                 <div class="form-group">
-                    <label>الموقع على الخريطة <span style="color:red">*</span></label>
+                    <label>الموقع على الخريطة (اختياري)</label>
                     <button type="button" id="get-location-btn">
                         <i class="fas fa-map-marker-alt"></i> تحديد موقعي الحالي
                     </button>
@@ -1796,19 +1796,14 @@
                 const apartment = document.getElementById('apartment-number').value.trim();
                 const notes = document.getElementById('address-notes').value.trim();
                 
-                // Validation
+                // Validation - الموقع أصبح اختياريًا
                 if (!name || !phone || !building || !apartment) {
                     checkoutFormError.textContent = 'يرجى ملء جميع الحقول المطلوبة.';
                     checkoutFormError.style.display = 'block';
                     return;
                 }
                 
-                if (!userLocation) {
-                    checkoutFormError.textContent = 'يرجى تحديد موقعك على الخريطة.';
-                    checkoutFormError.style.display = 'block';
-                    return;
-                }
-                
+                // لم نعد نتحقق من وجود الموقع لأنه أصبح اختياريًا
                 checkoutFormError.style.display = 'none';
                 
                 // Calculate totals
@@ -1829,8 +1824,13 @@
                 orderDetails += `رقم العمارة: ${building}\n`;
                 orderDetails += `رقم الشقة: ${apartment}\n`;
                 if (notes) orderDetails += `علامة مميزة: ${notes}\n`;
-                orderDetails += `موقع: https://www.google.com/maps?q=${userLocation.lat},${userLocation.lng}\n\n`;
-                orderDetails += `المنتجات المطلوبة:\n`;
+                
+                // إضافة الموقع فقط إذا تم تحديده
+                if (userLocation) {
+                    orderDetails += `موقع: https://www.google.com/maps?q=${userLocation.lat},${userLocation.lng}\n`;
+                }
+                
+                orderDetails += `\nالمنتجات المطلوبة:\n`;
                 
                 cart.forEach(item => {
                     const priceText = item.newPrice.replace(/[^0-9.]/g, '');
@@ -1932,19 +1932,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
