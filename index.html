@@ -1279,23 +1279,23 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Featured Products for Slider
             const featuredProducts = [
-                {name: "علبة سمنة الساقية", oldPrice: "85.00 جنيه", newPrice: "75.00 جنيه", discount: "-12%", image: "https://b.top4top.io/p_3597inxlu1.jpg", description: "جودة عالية وأسعار منافسة"},
-                {name: "علبة سمنة الأصيل 2 كجم", oldPrice: "145.00 جنيه", newPrice: "130.00 جنيه", discount: "-10%", image: "https://c.top4top.io/p_3597sa0v12.jpg", description: "جودة عالية وأسعار منافسة"},              
-                {name: "4 علبة دومتى 250جم أطعم", oldPrice: "92.00 جنيه", newPrice: "82.00 جنيه", discount: "-10%", image: "https://a.top4top.io/p_35970pwhr1.jpg", description: "جودة عالية وأسعار منافسة"},
-                {name: "2 كيس سحلب علاء الدين", oldPrice: "50.00 جنيه", newPrice: "40.00 جنيه", discount: "-20%", image: "https://b.top4top.io/p_35976cqin2.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "علبة سمنة الساقية", oldPrice: "85.00 جنيه", newPrice: "75.00 جنيه", discount: "-12%", image: "image/23.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "علبة سمنة الأصيل 2 كجم", oldPrice: "145.00 جنيه", newPrice: "130.00 جنيه", discount: "-10%", image: "image/24.jpg", description: "جودة عالية وأسعار منافسة"},              
+                {name: "4 علبة دومتى 250جم أطعم", oldPrice: "92.00 جنيه", newPrice: "82.00 جنيه", discount: "-10%", image: "image/48.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "2 كيس سحلب علاء الدين", oldPrice: "50.00 جنيه", newPrice: "40.00 جنيه", discount: "-20%", image: "image/47.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "طبق بيض ابيض", oldPrice: "145.00 جنيه", newPrice: "133.00 جنيه", discount: "-10%", image: "image/01.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "طبق بيض احمر", oldPrice: "145.00 جنيه", newPrice: "133.00 جنيه", discount: "-10%", image: "image/02.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "طبق بيض بلدى", oldPrice: "154.00 جنيه", newPrice: "140.00 جنيه", discount: "-10%", image: "image/03.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "بيضة (ابيض او احمر )", oldPrice: "5.50.00 جنيه", newPrice: "5.00 جنيه", discount: "-20%", image: "image/04.jpg", description: "جودة عالية وأسعار منافسة"},
-                {name: "كيلو سمن سايب", oldPrice: "120.00 جنيه", newPrice: "100.00 جنيه", discount: "-20%", image: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201911/ghee.png", description: "سمن طبيعي 100%"},
-                {name: "كيلو أرز وسط", oldPrice: "28.00 جنيه", newPrice: "23.00 جنيه", discount: "-20%", image: "https://www.albayan.ae/assets/archives/images/2023/08/25/4715792.jpg", description: "أفضل أنواع الأرز"},
-                {name: "2 زيت سندباد", oldPrice: "130.00 جنيه", newPrice: "105.00 جنيه", discount: "-25%", image: "https://www2.0zz0.com/2025/10/31/00/354952491.jpg", description: "زيت نباتي صحي"},
-                {name: "2 كيلو دقيق سايب", oldPrice: "40.00 جنيه", newPrice: "35.00 جنيه", discount: "-25%", image: "https://cdn.nur.kz/images/1200x675/7d9be34e89d9523d.jpeg", description: "دقيق عالي الجودة"},
-                {name: "كيلو جبنة ثلاجة", oldPrice: "140.00 جنيه", newPrice: "120.00 جنيه", discount: "-15%", image: "https://i.pinimg.com/736x/73/6f/8f/736f8fb118ca449d576f26b3a319da79.jpg", description: "جبنة طازجة من أفضل المزارع"},
-                {name: "كيلو جبنة براملى", oldPrice: "180.00 جنيه", newPrice: "160.00 جنيه", discount: "-12%", image: "https://avatars.dzeninfra.ru/get-zen_doc/3901320/pub_6209e776279dc141916f0754_6209eb7cf978a974ec4a23c2/scale_1200", description: "جبنة براملى ممتازة"},
-                {name: "شكارة ارز 25 كجم", oldPrice: "620.00 جنيه", newPrice: "540.00 جنيه", discount: "-8%", image: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/24432229385577.55f071518fbd7.jpg", description: "توفير كبير عند الشراء بالجملة"},
-                {name: "برجر المراعى عائلى", oldPrice: "125.00 جنيه", newPrice: "115.00 جنيه", discount: "-8%", image: "https://www2.0zz0.com/2025/10/31/00/288187501.jpg", description: "لحم بقري عالي الجودة"},
-                {name: "كيلو رنجة درجة أولى", oldPrice: "140.00 جنيه", newPrice: "115.00 جنيه", discount: "-18%", image: "https://ychef.files.bbci.co.uk/976x549/p04xs9bl.jpg0", description: "رنجة طازجة من أفضل الأنواع"}
+                {name: "كيلو سمن سايب", oldPrice: "120.00 جنيه", newPrice: "100.00 جنيه", discount: "-20%", image: "image/22.jpg", description: "سمن طبيعي 100%"},
+                {name: "كيلو أرز وسط", oldPrice: "28.00 جنيه", newPrice: "23.00 جنيه", discount: "-20%", image: "image/05.jpg", description: "أفضل أنواع الأرز"},
+                {name: "2 زيت سندباد", oldPrice: "130.00 جنيه", newPrice: "105.00 جنيه", discount: "-25%", image: "image/30.jpg", description: "زيت نباتي صحي"},
+                {name: "2 كيلو دقيق سايب", oldPrice: "40.00 جنيه", newPrice: "35.00 جنيه", discount: "-25%", image: "image/21.jpg", description: "دقيق عالي الجودة"},
+                {name: "كيلو جبنة ثلاجة", oldPrice: "140.00 جنيه", newPrice: "120.00 جنيه", discount: "-15%", image: "image/26.jpg", description: "جبنة طازجة من أفضل المزارع"},
+                {name: "كيلو جبنة براملى", oldPrice: "180.00 جنيه", newPrice: "160.00 جنيه", discount: "-12%", image: "image/27.jpg", description: "جبنة براملى ممتازة"},
+                {name: "شكارة ارز 25 كجم", oldPrice: "620.00 جنيه", newPrice: "540.00 جنيه", discount: "-8%", image: "image/07.jpg", description: "توفير كبير عند الشراء بالجملة"},
+                {name: "برجر المراعى عائلى", oldPrice: "125.00 جنيه", newPrice: "115.00 جنيه", discount: "-8%", image: "image/37.jpg", description: "لحم بقري عالي الجودة"},
+                {name: "كيلو رنجة درجة أولى", oldPrice: "140.00 جنيه", newPrice: "115.00 جنيه", discount: "-18%", image: "image/23.jpg", description: "رنجة طازجة من أفضل الأنواع"}
             ];
 
             // Carousel functionality
@@ -1944,6 +1944,7 @@
     </script>
 </body>
 </html>
+
 
 
 
