@@ -1292,8 +1292,8 @@
                 {name: "1 كيس سحلب علاء الدين 400جم", oldPrice: "50.00 جنيه", newPrice: "45.00 جنيه", discount: "-20%", image: "image/61.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "اوكسى 2.5 كجم اوتوماتيك", oldPrice: "190.00 جنيه", newPrice: "180.00 جنيه", discount: "-20%", image: "image/63.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "بخاخ معطر جو فلاور 2", oldPrice: "110.00 جنيه", newPrice: "100.00 جنيه", discount: "-20%", image: "image/66.jpg", description: "جودة عالية وأسعار منافسة"},
-                {name: "طبق بيض ابيض وزن 2 كجم", oldPrice: "130.00 جنيه", newPrice: "123.00 جنيه", discount: "-10%", image: "image/01.jpg", description: "جودة عالية وأسعار منافسة"},
-                {name: "طبق بيض احمر وزن 2 كجم", oldPrice: "140.00 جنيه", newPrice: "130.00 جنيه", discount: "-10%", image: "image/02.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "طبق بيض ابيض وزن 2 كجم", oldPrice: "140.00 جنيه", newPrice: "128.00 جنيه", discount: "-10%", image: "image/01.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "طبق بيض احمر وزن 2 كجم", oldPrice: "145.00 جنيه", newPrice: "130.00 جنيه", discount: "-10%", image: "image/02.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "بيضة (ابيض او احمر )", oldPrice: "5.00.00 جنيه", newPrice: "4.50 جنيه", discount: "-20%", image: "image/04.jpg", description: "جودة عالية وأسعار منافسة"},
                 {name: "كيلو سمن سايب", oldPrice: "120.00 جنيه", newPrice: "105.00 جنيه", discount: "-20%", image: "image/22.jpg", description: "سمن طبيعي 100%"},
                 {name: "كيلو أرز وسط", oldPrice: "28.00 جنيه", newPrice: "22.00 جنيه", discount: "-20%", image: "image/05.jpg", description: "أفضل أنواع الأرز"},
@@ -1449,11 +1449,16 @@
             const defaultImage = 'https://via.placeholder.com/300x200.png?text=No+Image';
 
             let products = [
-                {name: "طبق بيض ابيض وزن 2 كجم", newPrice: "123.00 جنيه", oldPrice: "130.00 جنيه", image: "image/01.jpg", category: "dairy-eggs"},
-                {name: "طبق بيض احمر وزن 2 كجم ", newPrice: "130.00 جنيه", oldPrice: "140.00 جنيه", image: "image/02.jpg", category: "dairy-eggs"},
+                {name: "طبق بيض ابيض وزن 2 كجم", newPrice: "128.00 جنيه", oldPrice: "140.00 جنيه", image: "image/01.jpg", category: "dairy-eggs"},
+                {name: "طبق بيض احمر وزن 2 كجم ", newPrice: "130.00 جنيه", oldPrice: "145.00 جنيه", image: "image/02.jpg", category: "dairy-eggs"},
                 {name: "بيضة (ابيض او احمر )", newPrice: "4.50 جنيه", oldPrice: "5.00 جنيه", image: "image/04.jpg", category: "dairy-eggs"},
-                {name: "فيتراك 1 كجم", newPrice: "70.00 جنيه/كجم", oldPrice: "80.00 جنيه/كجم", image: "image/68.png", category: "other"},
+                {name: "جبنة عبور 250جم طبيعى", newPrice: "37 جنيه", oldPrice: "40.00 جنيه", image: "image/105.jpg", category: "dairy-eggs"},
+                {name: "طبق جبنة رومى 250جم", newPrice: "65 جنيه", oldPrice: "75.00 جنيه", image: "image/112.jpg", category: "dairy-eggs"},
+                {name: "مربى البوادى كبير", newPrice: "45.00 جنيه/كجم", oldPrice: "108.00 جنيه/كجم", image: "image/68.png", category: "other"},
+                {name: "مربى البوادى وسط", newPrice: "30.00 جنيه/كجم", oldPrice: "108.00 جنيه/كجم", image: "image/68.png", category: "other"},
+                {name: "مربى البوادى صغير", newPrice: "20.00 جنيه/كجم", oldPrice: "107.00 جنيه/كجم", image: "image/68.png", category: "other"},
                 {name: "شاى ليبتون 250 جم", newPrice: "58.00 جنيه/كجم", oldPrice: "65.00 جنيه/كجم", image: "image/72.png", category: "other"},
+                {name: "كيس ماجى", newPrice: "23.00 جنيه/كجم", oldPrice: "30.00 جنيه/كجم", image: "image/110.png", category: "other"},
                 {name: "كيلو ارز وسط", newPrice: "22.00 جنيه/كجم", oldPrice: "28.00 جنيه/كجم", image: "image/05.jpg", category: "grains"},
                 {name: "كيلو ارز عريض", newPrice: "27.00 جنيه/كجم", oldPrice: "32.00 جنيه/كجم", image: "image/06.jpg", category: "grains"},
                 {name: "كيلو ارز بسمتى", newPrice: "45.00 جنيه/كجم", oldPrice: "60.00 جنيه/كجم", image: "image/75.png", category: "grains"},
@@ -1490,14 +1495,18 @@
                 {name: "كيلو جبنة براملى", newPrice: "150.00 جنيه", oldPrice: "180.00 جنيه", image: "image/27.jpg", category: "dairy-eggs"},
                 {name: "كيلو جبنة قريش", newPrice: "110.00 جنيه", oldPrice: "130.00 جنيه", image: "image/101.jpg", category: "dairy-eggs"},
                 {name: "كيلو جبنة كيرى", newPrice: "140.00 جنيه", oldPrice: "160.00 جنيه", image: "image/102.jpg", category: "dairy-eggs"},
+                {name: "جبنة فيتا صفراء 250جم", newPrice: "30.00 جنيه", oldPrice: "40.00 جنيه", image: "image/115.jpg", category: "dairy-eggs"},
                 {name: "كيلو طحينة سايب", newPrice: "120.00 جنيه", oldPrice: "160.00 جنيه", image: "image/28.jpg", category: "other"},
                 {name: "كيلو حلاوة سايبة ممتازة", newPrice: "120.00 جنيه", oldPrice: "140.00 جنيه", image: "image/29.jpg", category: "other"},
                 {name: "2 زيت الجودة 1 لتر", newPrice: "129.00 جنيه", oldPrice: "150.00 جنيه", image: "image/91.png", category: "oils"},
+                {name: "زيت هدية عباد 1 لتر", newPrice: "73.00 جنيه", oldPrice: "80.00 جنيه", image: "image/111.png", category: "oils"},
                 {name: " زيت تنورة 3 لتر", newPrice: "173.00 جنيه", oldPrice: "180.00 جنيه", image: "image/103.jpg", category: "oils"},
                 {name: "زيت قلية لتر صافي", newPrice: "75.00 جنيه", oldPrice: "80.00 جنيه", image: "image/35.jpg", category: "oils"},
                 {name: "زيت قلية 700جرام", newPrice: "55.00 جنيه", oldPrice: "60.00 جنيه", image: "image/36.jpg", category: "oils"},
                 {name: "زيت كريستال عباد الشمس 700 جرام", newPrice: "78.00 جنيه", oldPrice: "85.00 جنيه", image: "image/93.png", category: "oils"},
+                {name: "2 زيت حور 700 جم", newPrice: "88.00 جنيه", oldPrice: "100.00 جنيه", image: "image/109.png", category: "oils"},
                 {name: "زيت كريستال دره 700 جرام", newPrice: "88.00 جنيه", oldPrice: "95.00 جنيه", image: "image/94.png", category: "oils"},
+                {name: "زيت حلوة 5 لتر", newPrice: "315.00 جنيه", oldPrice: "330.00 جنيه", image: "image/106.png", category: "oils"},
                 {name: "لانشون حلوانى 250جم ", newPrice: "70.00 جنيه", oldPrice: "80.00 جنيه", image: "image/79.png", category: "meat"},
                 {name: "لانشون اوريجينتال 250جم", newPrice: "27.00 جنيه", oldPrice: "35.00 جنيه", image: "image/78.png", category: "meat"},
                 {name: "برجر المراعى عائلى", newPrice: "115.00 جنيه", oldPrice: "125.00 جنيه", image: "image/37.jpg", category: "meat"},
@@ -1533,6 +1542,8 @@
                 {name: "1كجم عدس بجبة", newPrice: "55.00 جنيه", oldPrice: "60.00 جنيه", image: "image/53.jpg", category: "grains"},
                 {name: "1كجم فاصوليا ", newPrice: "65.00 جنيه", oldPrice: "80.00 جنيه", image: "image/54.jpg", category: "grains"},
                 {name: "1كجم لوبيا ", newPrice: "65.00 جنيه", oldPrice: "80.00 جنيه", image: "image/55.jpg", category: "grains"},
+                {name: "كجم بقسماط مطحون", newPrice: "35.00 جنيه", oldPrice: "40.00 جنيه", image: "image/113.jpg", category: "grains"},
+                {name: "كجم فيجيتار مطحون", newPrice: "35.00 جنيه", oldPrice: "40.00 جنيه", image: "image/114.jpg", category: "grains"},
                 {name: "كيلو كاتشب حار", newPrice: "40.00 جنيه", oldPrice: "50.00 جنيه", image: "image/56.jpg", category: "other"},
                 {name: "كيلو كاتشب بارد", newPrice: "40.00 جنيه", oldPrice: "50.00 جنيه", image: "image/57.jpg", category: "other"},
                 {name: " بلح رطب سكرى", newPrice: "80.00 جنيه", oldPrice: "90.00 جنيه", image: "image/58.jpg", category: "other"},
@@ -1989,6 +2000,7 @@
     </script>
 </body>
 </html>
+
 
 
 
